@@ -1,0 +1,85 @@
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content fade-in">
+      <h1>Experience Authentic Taste & <br>Elegant Dining</h1>
+      <p>A culinary journey through the heart of India, served with elegance and tradition.</p>
+      <div class="hero-btns">
+        <a routerLink="/menu" class="btn btn-primary">View Menu</a>
+        <a routerLink="/events" class="btn btn-outline" style="color: white; border-color: white;">Book Banquet</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Introduction Section -->
+  <section class="intro">
+    <div class="container text-center">
+      <div class="section-title">
+        <h2>Welcome to The Spice Royale</h2>
+      </div>
+      <p class="intro-text">
+        Nestled in the heart of [City], The Spice Royale offers an exquisite dining experience that blends traditional Indian flavors with modern culinary artistry. Our chefs use only the freshest ingredients and authentic spices to create dishes that tell a story of heritage and passion. Whether you're here for a quiet family dinner or a grand celebration in our spacious banquet hall, we promise an atmosphere of luxury and warmth that will make every visit memorable.
+      </p>
+    </div>
+  </section>
+
+  <!-- Highlights Section -->
+  <section class="highlights bg-light">
+    <div class="container">
+      <div class="highlight-grid">
+        <div class="highlight-item">
+          <i class="fas fa-users"></i>
+          <h3>300+</h3>
+          <p>Daily Happy Customers</p>
+        </div>
+        <div class="highlight-item">
+          <i class="fas fa-glass-cheers"></i>
+          <h3>Spacious</h3>
+          <p>Banquet Hall (50-300 Guests)</p>
+        </div>
+        <div class="highlight-item">
+          <i class="fas fa-leaf"></i>
+          <h3>Fresh & Hygienic</h3>
+          <p>Quality Guaranteed</p>
+        </div>
+        <div class="highlight-item">
+          <i class="fas fa-home"></i>
+          <h3>Family Friendly</h3>
+          <p>Perfect for All Ages</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Food Section -->
+  <section class="featured">
+    <div class="container">
+      <div class="section-title">
+        <h2>Signature Dishes</h2>
+        <p>Hand-picked premium selections from our expert chefs</p>
+      </div>
+      <div class="food-grid">
+        <div class="food-card" *ngFor="let dish of featuredDishes">
+          <div class="food-img">
+            <img [src]="dish.image" [alt]="dish.name">
+          </div>
+          <div class="food-info">
+            <h3>{{dish.name}}</h3>
+            <p>{{dish.description}}</p>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-50">
+        <a routerLink="/menu" class="btn btn-primary">Discover Full Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta">
+    <div class="container text-center">
+      <h2>Plan Your Special Event with Us</h2>
+      <p>From weddings to corporate meetings, our banquet hall is the perfect venue for your next big event.</p>
+      <a routerLink="/events" class="btn btn-primary btn-lg">Inquire Now</a>
+    </div>
+  </section>
